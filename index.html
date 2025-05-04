@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Planner App 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Meal Planner 2025</h1>
+    <p>Personalized meal suggestions based on your lifestyle</p>
+  </header>
+  <main>
+    <form id="mealForm">
+      <label for="diet">Dietary Preferences:</label>
+      <select id="diet">
+        <option value="">--Select--</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="keto">Keto</option>
+        <option value="paleo">Paleo</option>
+        <option value="none">No Preference</option>
+      </select>
+
+      <label for="allergies">Allergies (comma separated):</label>
+      <input type="text" id="allergies" placeholder="e.g. peanuts, dairy" />
+
+      <label>Available Ingredients:</label>
+      <div id="ingredient-options">
+        <label><input type="checkbox" name="ingredients" value="chicken"> Chicken</label>
+        <label><input type="checkbox" name="ingredients" value="rice"> Rice</label>
+        <label><input type="checkbox" name="ingredients" value="lettuce"> Lettuce</label>
+        <label><input type="checkbox" name="ingredients" value="tomatoes"> Tomatoes</label>
+        <label><input type="checkbox" name="ingredients" value="tomatoes"> Cheese</label>
+        <label><input type="checkbox" name="ingredients" value="quinoa"> Quinoa</label>
+        <label><input type="checkbox" name="ingredients" value="eggs"> Eggs</label>
+        <label><input type="checkbox" name="ingredients" value="spinach"> Spinach</label>
+        <label><input type="checkbox" name="ingredients" value="tofu"> Tofu</label>
+        <label><input type="checkbox" name="ingredients" value="avocado"> Avocado</label>
+        <label><input type="checkbox" name="ingredients" value="broccoli"> Broccoli</label>
+        <label><input type="checkbox" name="ingredients" value="bread"> Bread</label>
+        <label><input type="checkbox" name="ingredients" value="cucumber"> Cucumber</label>
+        <label><input type="checkbox" name="ingredients" value="salmon"> Salmon</label>
+        <label><input type="checkbox" name="ingredients" value="lemon"> Lemon</label>
+        <label><input type="checkbox" name="ingredients" value="garlic"> Garlic</label>
+        <label><input type="checkbox" name="ingredients" value="olive oil"> Olive Oil</label>
+        <label><input type="checkbox" name="ingredients" value="spaghetti"> Spaghetti</label>
+      </div>
+
+      <button type="submit">Get Meal Suggestions</button>
+    </form>
+
+    <div class="output" id="output"></div>
+  </main>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
